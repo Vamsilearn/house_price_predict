@@ -19,8 +19,8 @@ distance_to_center = st.number_input("Enter distance to center:")
 
 if st.button("Predict price"):
 
-     features = 
-     [Square_feet,
+     features = [
+     Square_feet,
      num_bedrooms,
      num_bathrooms,
      num_floors,
@@ -29,7 +29,8 @@ if st.button("Predict price"):
      has_pool,
      garage_size,
      location_score,
-     distance_to_center]
+     distance_to_center
+     ]
 
      prediction = model.predict([features])[0]
      st.write(f'your predicted price is: ${prediction}')
