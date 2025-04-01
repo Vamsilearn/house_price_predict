@@ -20,7 +20,7 @@ distance_to_center = st.number_input("Enter distance to center:")
 if st.button("Predict price"):
 
      features = [
-     Square_feet,
+     Square_Feet,
      num_bedrooms,
      num_bathrooms,
      num_floors,
